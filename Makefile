@@ -12,10 +12,10 @@ EXEC = output
 all: $(EXEC)
 
 $(EXEC): $(OBJ)
-        $(CC) $(CFLAGS) -o $@ $^
+    $(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.c
-        $(CC) $(CFLAGS) -c -o $@ $<
+    $(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
-        rm -f $(OBJ) $(EXEC)
+    rm -f $(OBJ) $(EXEC)
